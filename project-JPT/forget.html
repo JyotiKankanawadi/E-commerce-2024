@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart - Forgot Password</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://source.unsplash.com/random/1600x900?password-reset');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+            background-color: rgb(175, 223, 223);
+        }
+
+        .forgot-password-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            width: 350px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .forgot-password-container h2 {
+            color: #2874f0;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .forgot-password-container p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .forgot-password-container input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .forgot-password-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2874f0;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .forgot-password-container button:hover {
+            background-color: #0b63d5;
+        }
+
+        .forgot-password-container .back-to-login {
+            display: block;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #2874f0;
+            text-decoration: none;
+        }
+
+        .forgot-password-container .back-to-login:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="forgot-password-container">
+    <h2>Forgot Password</h2>
+    <p>Enter your registered email address, and we'll send you a link to reset your password.</p>
+    <form action="/reset-password" method="post">
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+        <button type="submit">Send Reset Link</button>
+    </form>
+    <a href="loginpage.html" class="back-to-login">Back to Login</a>
+</div>
+
+</body>
+</html>
