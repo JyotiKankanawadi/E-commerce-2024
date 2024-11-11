@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking System</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #8eaecf;
+}
+
+h1 {
+    color: #333;
+}
+
+#order-form {
+    margin-bottom: 20px;
+}
+
+#order-form input, #order-form select {
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#order-form button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#order-form button:hover {
+    background-color: #0056b3;
+}
+
+.order {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.order p {
+    margin: 0;
+}
+
+.order-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+
+.pending { background-color: #ffc107; color: #fff; }
+.shipped { background-color: #17a2b8; color: #fff; }
+.delivered { background-color: #28a745; color: #fff; }
+</style>
+</head>
+<body>
+    <h1>Order Tracking System</h1>
+
+    
+    <div id="order-form">
+        <h2>Add New Order</h2>
+        <input type="text" id="customer-name" placeholder="Customer Name">
+        <input type="text" id="order-item" placeholder="Order Item">
+        <select id="delivery-status">
+            <option value="Pending">Pending</option>
+            <option value="Shipped">Shipped</option>
+            <option value="Delivered">Delivered</option>
+        </select>
+        <button onclick="addOrder()">Add Order</button>
+    </div>
+
+
+    <h2>Order List</h2>
+    <div id="order-list">
+        <p>No orders found</p>
+    </div>
+
+    <script src="script4.js"></script>
+</body>
+</html>

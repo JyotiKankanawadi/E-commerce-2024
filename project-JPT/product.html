@@ -1,0 +1,240 @@
+<html>
+    <head>
+        <style>
+            .container{
+                display:flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .img{
+                justify-content: space-around;
+                align-items: center;
+            }
+            .img3{
+                display:flex;
+                width:50px;
+                justify-content: space-around;
+                align-items: center;
+                gap:10px;
+            }
+            .img5{
+                display:flex;
+                height:300px;
+                width:280px;
+                gap:5px;
+            }
+            .search-square{
+                margin:23px 20px 17px 1000px;
+                height:30px;
+                width:300px;
+                border-radius: 4px;
+            }
+            .logo{
+                display: flex;
+                align-items: start;
+                position: relative;
+                justify-content: start;
+                margin-right: 700px;
+            }
+            
+            .cart1{
+                position: relative;
+                top:0px;
+                bottom: 0px;
+            }
+            * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #2874f0;
+        padding: 15px 30px;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 16px;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    .account-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .account-dropdown .dropbtn {
+        background-color: #2874f0;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .account-dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .account-dropdown-content a {
+        color: #333;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+    }
+
+    .account-dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .account-dropdown:hover .account-dropdown-content {
+        display: block;
+    }
+
+    .navbar .nav-right {
+        display: flex;
+        align-items: center;
+        margin-right: -150px;
+    }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">Flipkart</div>
+            <div class="nav-right">
+            <a href="product.html">Home</a>
+            <a href="list1.html">Category</a>
+            <a href="home1.html">Shop</a>
+            <a href="payment.html">Payment</a>
+            <div class="cart1">
+            
+                <div class="account-dropdown">
+                    <button class="dropbtn">Account</button>
+                    <div class="account-dropdown-content">
+                        <a href="register.html">Registration</a>
+                        <a href="track.html">Orders</a>
+                        <a href="wishlist.html">Wishlist</a>
+                        <a href="cart1.html">
+                            <img src="C:\project-JPT\cart.svg"/>Cart
+                        </a>
+                        <a href="setting.html">Settings</a>
+                        <a href="logout.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <div class="navbar"> 
+            
+            </div>
+        </div>
+       
+            <span><input type="text" class="search-square" placeholder="   Search...">
+            <input type="button" value="&#xf002;">
+            </span></div>
+        </div>
+            <br /><br/>
+            <div class="container">
+                <div class="img">
+                <img src="C:\project-JPT\proimg2.webp"/><br/><br />
+                <label for="name"><b>Top Offers</b></label>
+                </div>
+                <div class="img">
+                <img src="C:\project-JPT\proimg3.webp" /><br /><br/>
+                <label for="name"><b>Mobiles & Tablets</b></label>
+                </div>
+                <div>
+                <img src="C:\project-JPT\tv.webp" /><br /><br/>
+                <label for="name"><b>TVs & Applications</b></label>
+                </div>
+                <div class="img">
+                <img src="C:\project-JPT\proimg4.webp"/><br/><br/>
+                <label for="name"><b>Electronic</b></label>
+                </div>
+                <div class="img">
+                <img src="C:\project-JPT\proimg5.webp"/><br/><br/>
+                <label for="name"><b>Fashion</b></label>
+                </div>
+                <div class="img">
+                <img src="C:\project-JPT\proimg6.webp"/><br/><br/>
+                <label for="name"><b>Beauty,Food...</b></label>
+                </div>
+                <div class="img">
+                <img src="C:\project-JPT\proimg7.webp"/><br/><br/>
+                <label for="name"><b>Home & Kitchen</b></label>
+                </div>
+                <div class="img">
+                <img src="C:\project-JPT\proimg8.webp"/><br/><br/>
+                <label for="name"><b>Furniture</b></label>
+                </div>
+                <div class="img">
+                <img src="C:\project-JPT\proimg9.webp"/><br/><br/>
+                <label for="name"><b>Travel</b></label>
+                </div>
+                <div class="img">
+                <img src="C:\project-JPT\proimg10.webp"/><br/><br/>
+                <label for="name"><b>Grocery</b></label>
+                </div>
+            </div>
+        </div><br/>
+        <div class="imag2">
+            <img src="C:\project-JPT\proimg11.webp"/>
+        </div><br/>
+        <div>
+            <img src="C:\project-JPT\proimg13.webp"/>
+        </div><br/>
+        <div>
+            <img src="C:\project-JPT\proimg14.webp"/>
+            <img src="C:\project-JPT\proimg15.webp"/>
+            <img src="C:\project-JPT\proimg16.webp"/>
+        </div><br/>
+        <div>
+            <img src="C:\project-JPT\proimg17.webp"/>
+        </div><br/>
+        
+        </div>
+        <div>
+            <h1>Featured Brands</h1>
+            <div class="img3">
+                <img src="C:\project-JPT\proimg28.webp"/>
+                <img src="C:\project-JPT\proimg29.webp"/>
+                <img src="C:\project-JPT\proimg30.webp"/>
+            </div>
+        </div>
+        <div class="img4">
+            <img src=""/>
+        </div>
+        <div>
+            <h1>Best Deals On Electronics</h1>
+            <div class="img5">
+                <img src="C:\project-JPT\pic4.avif"/>
+                <img src="C:\project-JPT\pic5.jpeg"/>
+                <img src="C:\project-JPT\pic6.webp"/>
+                <img src="C:\project-JPT\pic7.webp" />
+            </div>
+    </body>
+</html>

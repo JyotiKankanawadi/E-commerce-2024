@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart - Account Settings</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Settings container styling */
+        .settings-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Title styling */
+        .settings-container h1 {
+            color: #2874f0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Section styling */
+        .settings-section {
+            margin-bottom: 30px;
+        }
+
+        .settings-section h2 {
+            font-size: 20px;
+            color: #2874f0;
+            margin-bottom: 10px;
+        }
+
+        .settings-section label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .settings-section input[type="text"],
+        .settings-section input[type="email"],
+        .settings-section input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .settings-section select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Save button styling */
+        .settings-section button {
+            background-color: #2874f0;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .settings-section button:hover {
+            background-color: #0b63d5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="settings-container">
+    <h1>Account Settings</h1>
+
+    <div class="settings-section">
+        <h2>Personal Information</h2>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email address">
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="Enter your phone number">
+
+        <button type="button">Save Changes</button>
+    </div>
+
+    <div class="settings-section">
+        <h2>Change Password</h2>
+        <label for="current-password">Current Password</label>
+        <input type="password" id="current-password" placeholder="Enter current password">
+
+        <label for="new-password">New Password</label>
+        <input type="password" id="new-password" placeholder="Enter new password">
+
+        <label for="confirm-password">Confirm New Password</label>
+        <input type="password" id="confirm-password" placeholder="Confirm new password">
+
+        <button type="button">Update Password</button>
+    </div>
+
+    <div class="settings-section">
+        <h2>Notification Settings</h2>
+        <label for="notifications">Email Notifications</label>
+        <select id="notifications">
+            <option value="all">All Notifications</option>
+            <option value="order-updates">Order Updates Only</option>
+            <option value="offers">Offers & Promotions Only</option>
+            <option value="none">No Notifications</option>
+        </select>
+
+        <button type="button">Save Preferences</button>
+    </div>
+
+    <div class="settings-section">
+        <h2>Payment Methods</h2>
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" placeholder="Enter card number">
+
+        <label for="expiry-date">Expiry Date</label>
+        <input type="text" id="expiry-date" placeholder="MM/YY">
+
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" placeholder="CVV">
+
+        <button type="button">Add Card</button>
+    </div>
+</div>
+
+</body>
+</html>
